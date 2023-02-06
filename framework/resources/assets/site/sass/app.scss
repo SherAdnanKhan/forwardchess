@@ -1,0 +1,229 @@
+@import "~vue-snotify/styles/material";
+@import "~vue-multiselect/dist/vue-multiselect.min";
+@import "~v-suggestions/dist/v-suggestions.css";
+@import "~firebaseui/dist/firebaseui.css";
+@import "fonts/export";
+@import "theme/style";
+@import "mixins/loader";
+@import "helpers";
+@import "pagination";
+@import "multiselect";
+@import "invoice";
+@import "homepage-apps";
+@import "auth/export";
+@import "place-order";
+@import "profile-modal";
+@import "reviews";
+
+form {
+  margin-bottom: 0;
+}
+
+.logo-holder {
+  .logo {
+    margin: 17px 0 0;
+
+    .logo-image {
+      background: $logo-background;
+      background-size: cover;
+      display: block;
+      width: 170px;
+      height: 75px;
+      margin-top: -17px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#sticky-wrapper {
+  z-index: 110;
+
+  header {
+    z-index: 999 !important;
+    background: #fff;
+  }
+}
+
+.field-row {
+  .invalid-feedback {
+    color: red;
+    font-size: 12px;
+  }
+}
+
+.btn-add-to-cart {
+  &.is-loading {
+    background: url('./images/btn-spinner.gif') no-repeat center #c6c6c6;
+    cursor: not-allowed;
+    background-size: 20px;
+
+    span {
+      visibility: hidden;
+    }
+  }
+
+  &.disabled {
+    background-color: #c6c6c6 !important;
+  }
+}
+
+.top-cart-holder, #cart-page {
+  @include loader();
+}
+
+#cart-page {
+  .spinner {
+    background: url('./images/AjaxLoader.gif') no-repeat center;
+  }
+
+  .error-msg {
+    color: $red-color;
+    font-size: 12px;
+    margin: $magrin-top-10 0;
+    display: block;
+    float: left;
+  }
+}
+
+header {
+  .top-search-holder .search-area {
+    .search-container {
+      display: inline-block;
+    }
+
+    .search-button {
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .top-cart-holder .basket .dropdown-menu {
+      left: -80px;
+    }
+
+    .top-cart-row-container {
+      text-align: center;
+    }
+  }
+}
+
+
+.wrapper-thank-you-page {
+  position: relative;
+  background: $white-color;
+  border: 1px solid $content-gray-color;
+  box-sizing: border-box;
+  border-radius: $border-radius-5;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 96%;
+    height: 9px;
+    left: 50%;
+    bottom: -13px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: $white-color;
+    border: 1px solid $content-gray-color;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: $border-radius-5;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 98%;
+    height: 7px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: $white-color;
+    border: 1px solid $content-gray-color;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: $border-radius-5;
+  }
+
+  .description-order {
+    font-size: $font-size-18;
+    line-height: $line-height-23;
+    color: $black-color;
+  }
+
+  .info {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $content-gray-color;
+    .title-order {
+      @include font-family__futuraPT(500);
+      font-size: 36px;
+      line-height: 46px;
+      text-transform: uppercase;
+      color: $black-color;
+      margin-bottom: 40px;
+    }
+
+    .order-image {
+      margin-bottom: 34px;
+    }
+  }
+
+  .wrapper-download-section {
+    padding: 50px 0;
+    .download-descr {
+      padding: 0px 220px;
+    }
+
+    .wrapper-download {
+      margin-top: 30px;
+      .wrapper-download-pc {
+        width: 180px;
+        background: $black-color;
+        border-radius: $border-radius-5;
+        height: 40px;
+        margin-left: 15px;
+        a {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          color: $white-color;
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      a:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.special-offers {
+  .product-item:last-of-type {
+      margin-bottom: 0;
+  }
+}
+
+.input-group {
+  .input-group-addon {
+    background: #f6f6f6;
+  }
+
+  .le-input {
+    border: 1px solid #ccc;
+  }
+}
+
+#category-grid{
+  background-color: #ECEFF1;
+}
+
+
+
+

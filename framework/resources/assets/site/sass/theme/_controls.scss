@@ -1,0 +1,215 @@
+/*===================================================================================*/
+/*  Input Controls, Accordion Boxes, Price Slider, Buttons and Star Rating
+/*===================================================================================*/
+
+// Checkbox
+
+.le-checkbox {
+  z-index: 2;
+  position: relative;
+  margin: 7px 0 0 0 !important;
+  vertical-align: middle;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+
+  &.big {
+    & + .fake-box {
+      border-radius: 0;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  & + .fake-box {
+    border-radius: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -3px 5px 0 0;
+    vertical-align: middle;
+    border: 1px solid $content-gray-color;
+    background-color: #fff;
+    position: relative;
+  }
+
+
+  &:hover, &:focus {
+    cursor: pointer;
+
+    & + .fake-box {
+      background-color: $second-color;
+    }
+  }
+
+  &:checked {
+    & + .fake-box {
+      &:after {
+        position: absolute;
+        content: url("data:image/svg+xml; utf8, <svg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.69565 0L10 1.23529L3.92174 7L0 3.29412L1.30435 2.05882L3.92174 4.52941L8.69565 0Z' fill='white'/></svg>");
+        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        //top: 50%;
+        //left: 50%;
+        //transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+// Select Dropdown
+
+.le-select {
+  background-color: #fff;
+  border: 1px solid darken($second-color, 5%);
+  padding: 5px 16px 7px 5px;
+  color: $black;
+  width: 100%;
+  font-size: 13px;
+  width: auto;
+  position: relative;
+  @extend .inline;
+
+  .le-select-in {
+    width: auto;
+    @extend .inline;
+  }
+
+  select {
+    position: absolute;
+    width: 100% !important;
+    bottom: 0;
+    height: 32px !important;
+    left: 0px;
+  }
+
+  &:after {
+    content: '\f107';
+    font-family: fontawesome;
+    color: $black;
+    font-size: 15px;
+    height: 13px;
+    position: absolute;
+    right: 6px;
+    top: 21%;
+  }
+}
+
+// Price Slider
+
+.slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  &.slider-horizontal {
+    width: 100% !important;
+    height: 20px;
+
+    .slider-track {
+      height: 2px;
+      width: 100%;
+      margin-top: -5px;
+      top: 50%;
+      left: 0;
+    }
+
+    .slider-selection {
+      top: 0;
+      bottom: 0;
+    }
+
+    .slider-handle {
+      margin-top: -5px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  .tooltip-inner {
+    white-space: nowrap;
+  }
+}
+
+.slider-track {
+  position: absolute;
+  cursor: pointer;
+  background-color: $content-gray-color;
+  width: 100% !important;
+  margin: 0 auto;
+  background-repeat: repeat-x;
+}
+
+.slider-selection {
+  position: absolute;
+  background-repeat: repeat-x;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: $redesign-orange-color !important;
+}
+
+.slider-handle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 400px;
+  background-color: $white-color;
+  top: -3px;
+  background-repeat: repeat-x;
+  margin-left: -3px !important;
+  opacity: 1;
+  border: 5px solid $redesign-orange-color !important;
+}
+
+
+// Buttons
+
+.le-button {
+  border-radius: $border-radius-4;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+  line-height: $line-height-20;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  @extend .capital;
+  transition: 0.3s ease;
+
+  &.huge {
+    padding: 18px 52px;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    background-color: darken($second-color, 20%);
+    color: #fff;
+  }
+
+  &.inverse {
+    background-color: darken($second-color, 10%);
+    color: $black;
+    font-weight: 100;
+
+    &:hover {
+      background-color: darken($second-color, 5%);
+      color: $black;
+    }
+  }
+
+  &.big {
+    padding: 15px 34px;
+  }
+}

@@ -1,0 +1,143 @@
+.widget {
+  background-color: $white-color;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius-5;
+
+  .wrap-filters {
+    padding: 30px 0px 24px 24px;
+
+    .wrapper-clear, .accordion-title, ul {
+      padding-right: $padding-right-24;
+    }
+
+    .accordion-title {
+      .collapsed {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .filter-button {
+      .price-filter-from-to {
+        padding-left: 12px;
+        font-size: $font-size-16;
+        line-height: $line-height-20;
+        color: #757575;
+        max-width: 80px;
+        height: 36px;
+        border: 1px solid $content-gray-color;
+      }
+
+      .price-filter-from-to {
+        border-radius: 0px 2px 2px 0px;
+      }
+
+      .price-filter-from-to:first-child {
+        border-right: none;
+        border-radius: 2px 0px 0px 2px;
+      }
+
+      a {
+        text-transform: uppercase;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .filter-button-apply {
+        max-width: 42px;
+        height: 36px;
+        background: $content-gray-color;
+        border-radius: $border-radius-3;
+        font-size: $font-size-16;
+        line-height: $line-height-20;
+        color: $white-color;
+        border: transparent;
+        transition: 0.2s;
+
+        &:hover {
+          background-color: $redesign-orange-color;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+
+  .wrapper-clear {
+    margin-bottom: $margin-bottom-24;
+
+    .filters-text {
+      font-size: $font-size-24;
+      line-height: $line-height-100;
+      text-transform: capitalize;
+      color: $black-color;
+    }
+
+    .clear-widget {
+      font-size: $font-size-16;
+      line-height: $line-height-100;
+      color: $content-gray-color;
+
+      &:hover {
+        color: $redesign-orange-color;
+      }
+    }
+  }
+
+  .price-filter {
+    h2 {
+      color: $black-color;
+      font-size: $font-size-18;
+      line-height: $line-height-120;
+      margin-bottom: 12px;
+    }
+
+    .price-range-holder {
+      margin-bottom: 18px;
+      max-width: 90%;
+    }
+  }
+
+  .accordion {
+    border-bottom: 1px solid $content-gray-color;
+  }
+
+  .accordion:last-child {
+    margin-top: 20px;
+    margin-bottom: $magrin-bottom-20;
+  }
+
+  .accordion-title {
+    font-size: $font-size-18;
+    line-height: $line-height-120;
+
+    a {
+      color: $black-color;
+    }
+  }
+
+  .accordion-heading {
+    margin-bottom: $magrin-bottom-20;
+  }
+
+  .accordion-body {
+    ul {
+      padding-top: 13px;
+      border-top: 1px solid $content-gray-color;
+
+      li {
+        margin-bottom: 9px;
+
+        label {
+          font-size: $font-size-14;
+          line-height: $line-height-18;
+          font-weight: 400;
+          color: $black-color;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}

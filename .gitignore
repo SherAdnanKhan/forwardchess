@@ -1,0 +1,16 @@
+.idea
+/node_modules
+/hot
+/framework/storage
+/framework/storage/*.key
+/framework/vendor
+/.idea
+/.vscode
+/.vagrant
+Homestead.json
+Homestead.yaml
+/npm-debug.log
+/yarn-error.log
+/framework/.env
+/storage/
+app.js.LICENSE.txt

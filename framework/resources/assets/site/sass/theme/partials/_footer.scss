@@ -1,0 +1,49 @@
+/*===================================================================================*/
+/*  Footer
+/*===================================================================================*/
+.footer {
+  background-color: #14183C;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  .copyright {
+    font-size: $font-size-16;
+    line-height: $line-height-20;
+    color: $white-color;
+
+    a {
+      font-size: $font-size-16;
+      line-height: $line-height-20;
+      color: $white-color;
+
+      &:hover {
+        color: $redesign-orange-color;
+      }
+    }
+  }
+
+  .payment-methods {
+    ul {
+      li {
+        &:first-child {
+          padding-right: 30px;
+        }
+
+        a {
+          font-size: $font-size-16;
+          line-height: $line-height-20;
+          color: $white-color;
+
+          &:hover {
+            color: $redesign-orange-color;
+          }
+        }
+      }
+
+      .payment-icon {
+        margin-left: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}

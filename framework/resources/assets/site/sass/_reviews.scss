@@ -1,0 +1,81 @@
+.reviews-list {
+  @include loader();
+
+  .spinner {
+    background: url('images/ajax.gif') no-repeat center 150px;
+  }
+
+  padding-bottom: 35px;
+
+  &.with-pagination {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 0;
+  }
+
+  .review-form {
+    background-color: #eceff1;
+    padding: 20px;
+    margin-bottom: 5px;
+
+    h2 {
+      color: black;
+    }
+
+    .title-field {
+      margin-top: 25px;
+
+      @media (max-width: $screen-md-min) {
+        margin-top: 10px;
+      }
+    }
+
+    .is-invalid {
+      border: 1px solid red;
+    }
+
+    .add-rating {
+      margin-bottom: 10px;
+    }
+  }
+
+  .review-item {
+    background-color: #eceff1;
+    margin-bottom: 5px;
+    padding: 20px;
+
+    .review-item-header {
+      @media (min-width: $screen-md-min) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nickname {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .rating {
+        margin-bottom: 10px;
+      }
+    }
+
+    .title {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+
+    .description {
+      margin: 0;
+    }
+  }
+
+  .more-reviews-btn {
+    background: none;
+    border: none;
+    color: #f86f34;
+    margin: 20px auto;
+  }
+}

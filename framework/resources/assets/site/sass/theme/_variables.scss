@@ -1,0 +1,139 @@
+//===================================================================================*/
+//  Variables
+//===================================================================================*/
+
+$green-color:         #59B210;
+$blue-color:          #3498db;
+$red-color:           #e74c3c;
+$orange-color:        #F27A24;
+$navy-color:          #34495E;
+$dark-green-color:    #21b68e;
+
+$second-color:        #F9F9F9;
+$black:               #3D3D3D;
+$light-black:         #636363;
+
+$blue:                #0E53A5;
+$highlight-txt:       #fff;
+
+$text-color:          #5D5D5D;
+
+$container-md:        985px;
+$container-lg:        1200px;
+
+$title-color:         #434343;
+$content-color:       #747474;
+
+
+$black-color:             #000000;
+$white-color:             #ffffff;
+$redesign-orange-color:   #F96F34;
+$light-gray-color:        #7d7d7d;
+$gray-color:              #666666;
+$content-gray-color:      #BDBDBD;
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+
+$enable-transitions:        true !default;
+$logo-background: url('./images/logo.png') no-repeat 0 -18px !default;
+
+@import 'integrations/fontawesome-variables';
+
+
+
+
+
+
+// font-size
+$font-size-14:              14px;
+$font-size-16:              16px;
+$font-size-18:              18px;
+$font-size-20:              20px;
+$font-size-24:              24px;
+$font-size-30:              30px;
+
+
+// border-radius
+$border-radius-3:           3px;
+$border-radius-4:           4px;
+$border-radius-5:           5px;
+
+// padding
+
+$padding-0-12:               0 12px;
+$padding-12-20:              12px 20px;
+$padding-0-20:               0 20px;
+
+// line-height
+
+$line-height-15:            15px;
+$line-height-18:            18px;
+$line-height-20:            20px;
+$line-height-23:            23px;
+$line-height-24:            24px;
+$line-height-31:            31px;
+$line-height-100:           100%;
+$line-height-120:           120%;
+
+
+// font-weight
+$font-weight-500:           500;
+$font-weight-600:           600;
+
+// margin
+$magrin-top-10:             10px;
+$magrin-bottom-10:          10px;
+$magrin-bottom-20:          20px;
+$margin-right-20:           20px;
+$margin-left-24:            24px;
+$margin-right-24:           24px;
+$margin-top-24:             24px;
+$margin-bottom-24:          24px;
+
+
+// padding
+$padding-left-15:           15px;
+$padding-right-15:          15px;
+$padding-left-20:           20px;
+$padding-left-24:           24px;
+$padding-right-24:          24px;
+$padding-bottom-24:         24px;
+$padding-24:                24px;
+$padding-top-24:            24px;
+
+
+

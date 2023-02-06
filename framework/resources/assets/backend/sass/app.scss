@@ -1,0 +1,125 @@
+.VueTables {
+  .VueTables__search {
+    input[type="text"] {
+      margin-left: 10px;
+    }
+  }
+
+  .VueTables__limit-field {
+    select.form-control {
+      margin-left: 10px;
+    }
+  }
+
+  .VueTables__actions-filter-wrapper {
+    display: none;
+  }
+}
+
+.modal {
+  .modal-header {
+    .modal-title,
+    .close {
+      display: inline-block;
+    }
+  }
+}
+
+html.no-overflowscrolling .nano > .nano-content {
+  overflow: auto;
+}
+
+.pointer {
+  cursor: pointer !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form-checkbox {
+  @media (min-width: 1200px) {
+    margin-top: 35px;
+  }
+}
+
+@import "vendor";
+@import "helpers";
+@import "edit-page";
+@import "spinner";
+@import "filters-panel";
+@import "date-picker";
+@import "reviews";
+
+.order-page {
+  .table {
+    tr:first-child {
+      td {
+        border-top: 0;
+      }
+    }
+
+    .col-label {
+      font-weight: 600;
+    }
+
+    .table-row {
+      font-size: 15px;
+    }
+  }
+
+  .summary-label,
+  .summary-value {
+    font-size: 15px;
+  }
+
+  .summary-label {
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .summary-value {
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+.table-report {
+  thead {
+    font-size: 15px;
+  }
+}
+
+.report-group {
+  .form-control {
+    max-width: 200px;
+    display: inline-block;
+  }
+
+  .vue-monthly-picker {
+    display: inline-block;
+  }
+}
+
+.header-right {
+  height: 40px;
+  margin-top: 13px;
+}
+
+.VueTables__child-row-toggler {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.VueTables__child-row-toggler--closed::before {
+  content: "+";
+}
+
+.VueTables__child-row-toggler--open::before {
+  content: "-";
+}
+

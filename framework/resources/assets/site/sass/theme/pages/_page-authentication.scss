@@ -1,0 +1,47 @@
+/*===================================================================================*/
+/*  Authentication Article
+/*===================================================================================*/
+
+.btn-facebook, .btn-twitter {
+  background-color: #3d5c98;
+  color: $highlight-txt;
+  font-size: $font-size-14;
+  line-height: 28px;
+
+  &:hover, &:focus, &:active {
+    background-color: darken(#3d5c98, 10%);
+    color: $highlight-txt;
+  }
+
+  i {
+    font-size: 25px;
+    display: inline-block;
+    padding-right: $padding-right-15;
+  }
+}
+
+.btn-twitter {
+  background-color: #22aadf;
+
+  &:hover, &:focus, &:active {
+    background-color: darken(#22aadf, 10%);
+    color: #FFF;
+  }
+}
+
+.social-auth-buttons {
+  padding: 15px 0 25px 0;
+}
+
+.register-form {
+  padding: 40px 0;
+}
+
+.list-benefits {
+  > li {
+    margin-bottom: 15px;
+    color: #747474;
+    font-size: $font-size-16;
+    font-weight: $font-weight-600;
+  }
+}

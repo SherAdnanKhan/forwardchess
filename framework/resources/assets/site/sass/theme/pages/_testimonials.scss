@@ -1,0 +1,22 @@
+.section-testimonials {
+  .wrapper-testimonial {
+    background: $white-color;
+    border: 1px solid $content-gray-color;
+    box-sizing: border-box;
+    border-radius: $border-radius-5;
+
+    .testimonial {
+      padding: $padding-24;
+      padding-left: 0;
+      margin-left: $margin-left-24;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $content-gray-color;
+      }
+
+      .comment-name {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

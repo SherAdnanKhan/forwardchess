@@ -1,0 +1,13 @@
+.mx-datepicker {
+  display: block !important;
+  width: auto !important;
+
+  &.mx-datepicker-range {
+    width: 100%;
+  }
+
+  .mx-input-wrapper {
+    position: relative;
+    border-collapse: separate;
+  }
+}

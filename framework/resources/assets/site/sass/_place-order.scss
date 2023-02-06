@@ -1,0 +1,18 @@
+#checkout-page {
+  @include loader();
+
+  .spinner {
+    background: url('images/ajax.gif') no-repeat center 150px;
+  }
+
+  .errors-container {
+    .well {
+      background: $orange-color;
+      color: #fff;
+    }
+
+    ul {
+      margin-top: 20px;
+    }
+  }
+}

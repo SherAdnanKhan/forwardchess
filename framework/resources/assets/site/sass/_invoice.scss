@@ -1,0 +1,107 @@
+// INVOICE BASIC
+// -----------------------------------------------------------------------------
+/* Invoice */
+.invoice {
+  padding: 0 15px 15px;
+
+  address {
+    color: #7F8597;
+    line-height: 1.5em;
+  }
+
+  .header {
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    .h2,
+    .h4 {
+      letter-spacing: 0;
+    }
+
+    .address {
+      margin-top: 22px;
+    }
+
+    .logo {
+      width: 85px;
+      margin: 2px 0 0 10px;
+    }
+  }
+
+  .bill-to,
+  .bill-data {
+    padding: 15px 0;
+  }
+
+  .bill-data {
+    .value {
+      display: inline-block;
+      margin-left: 10px;
+      width: 90px;
+    }
+  }
+
+  table.table {
+    table-layout: fixed;
+
+    > thead:first-child {
+      > tr {
+        > th {
+          background-color: $red-color;
+          color: #fff;
+
+          border: {
+            bottom: 1px solid #DADADA;
+            top: 1px solid #DADADA;
+          }
+        }
+      }
+    }
+
+    > tbody tr > td {
+      border-color: #DADADA;
+    }
+  }
+
+  .invoice-items {
+    tbody td {
+      font-size: 13px;
+    }
+
+    #cell-id {
+      width: 5%;
+    }
+
+    #cell-item {
+      width: 80%;
+    }
+
+    #cell-price {
+      width: 10%;
+    }
+  }
+
+  .invoice-summary {
+    .col-sm-4 {
+      padding-left: 0;
+    }
+  }
+}
+
+// RESPONSIVE
+// -----------------------------------------------------------------------------
+/* Invoice Responsiveness */
+@media only screen and (max-width: 991px) {
+  .invoice {
+    .table-responsive > table.table {
+      table-layout: auto;
+    }
+  }
+
+  .invoice-summary {
+    .col-sm-4 {
+      padding-left: 15px;
+    }
+  }
+}

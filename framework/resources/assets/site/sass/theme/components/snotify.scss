@@ -1,0 +1,17 @@
+.snotify-rightTop {
+  width: auto;
+  position: fixed;
+  top: 50%;
+  z-index: 998;
+  transform: translateY(-50%);
+  .snotifyToast {
+    .snotifyToast__inner {
+      min-height: 46px;
+      padding: 15px 20px;
+
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+}

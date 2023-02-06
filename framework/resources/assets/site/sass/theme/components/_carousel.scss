@@ -1,0 +1,238 @@
+.tab-holder {
+  padding-top: 80px;
+}
+
+.line-top {
+  border-top: 2px solid $content-gray-color;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper-title {
+    margin-bottom: 20px;
+  }
+
+  .tab-holder {
+    padding-top: 50px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-new-arrivals {
+    margin-top: 30px;
+  }
+}
+
+.section-home-slider {
+  padding-bottom: 40px;
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  .view-all {
+    padding: 8px 14px;
+    background: $white-color;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: $border-radius-3;
+
+    a {
+      color: $redesign-orange-color;
+
+      svg {
+        path {
+          fill: $redesign-orange-color;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .title {
+      line-height: 26px;
+    }
+  }
+
+  .product-grid-holder {
+    height: unset;
+
+    .product-item-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: unset;
+
+      .content {
+        height: unset;
+
+        .text-block {
+          margin-bottom: 12px;
+        }
+
+        .image-block {
+          .image-link {
+            display: flex;
+            flex-grow: 1;
+            //@media (max-width: 600px) {
+            //  .image {
+            //    max-height: 310px !important;
+            //  }
+            //}
+          }
+        }
+      }
+
+      .purchase {
+        padding: 0 12px;
+        padding-bottom: 12px;
+        max-height: 80px;
+
+        .le-button {
+          padding: 7px 11px;
+          @media (max-width: 600px) {
+            padding: 6px 8px;
+            span {
+              font-weight: 400;
+            }
+          }
+        }
+
+        .wishlist-wrapper{
+          margin-bottom:10px;
+        }
+      }
+    }
+  }
+
+
+  .slick-track {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    @media (max-width: 600px) {
+      //.product-item-grid {
+      //  width: 242px;
+      //  height: 470px;
+      //}
+
+      .slick-active {
+        transform: scale(1.1, 1.1);
+        transition-timing-function: ease-out;
+        transition-duration: 550ms;
+      }
+    }
+  }
+}
+
+
+// ========================================================================================================
+
+.sliders {
+  .wrapper-title {
+    @media (max-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+
+  .wrapper-block {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 62px;
+    height: 36px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .sliders-init {
+    margin-bottom: 70px;
+
+    .prev-arrow {
+      right: 40px;
+      bottom: 452px;
+      position: absolute;
+      cursor: pointer;
+    }
+
+    .next-arrow {
+      position: absolute;
+      bottom: 452px;
+      right: 12px;
+      cursor: pointer;
+    }
+
+    .slick-track {
+      padding-bottom: 20px;
+      @media (max-width: 600px) {
+        padding-top: 40px;
+        padding-bottom: 35px;
+        .slick-active {
+          transform: scale(1.1, 1.1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+        }
+      }
+    }
+
+    .slide {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 383px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        @media (max-width: 768px) {
+          width: 242px;
+          height: 470px;
+        }
+
+
+        .image {
+          height: 232px;
+          padding: 5px;
+          @media (max-width: 768px) {
+            padding: 8px;
+            height: 334px;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .content {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+
+          .description-small-dark {
+            flex-grow: 1;
+            font-size: 14px;
+            line-height: 18px;
+            color: #666666;
+
+            span {
+              color: #000000;
+              font-weight: 500;
+              @media (min-width: 768px) {
+                display: none;
+              }
+            }
+          }
+
+          .price-current {
+            margin-bottom: 15px;
+            margin-top: 10px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+

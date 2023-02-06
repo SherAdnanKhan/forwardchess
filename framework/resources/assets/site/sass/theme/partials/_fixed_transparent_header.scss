@@ -1,0 +1,39 @@
+
+header {
+  left: 0px;
+  top: 66px;
+  width: 100%;
+  height: 66px;
+  background-color: #1B1D3C;
+}
+
+#download-app ~ .wrapper,
+#home-page ~ .wrapper {
+  .sticky-wrapper {
+    position: relative;
+    height: unset !important;
+
+    header {
+      background-color: transparent;
+      position: absolute;
+      height: 60px;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    &:not(.is-sticky) {
+      .low-bar {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  #top-banner-and-menu {
+    margin-top: 0 !important;
+  }
+
+  #top-banner-download-app {
+    margin-top: 0 !important;
+  }
+}

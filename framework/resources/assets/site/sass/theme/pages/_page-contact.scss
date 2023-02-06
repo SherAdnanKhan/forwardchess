@@ -1,0 +1,61 @@
+/*===================================================================================*/
+/*  Contact Article
+/*===================================================================================*/
+
+.contact-us {
+  .col-padding-right {
+    padding-right: 10px;
+  }
+
+  .col-padding-left {
+    padding-left: 10px;
+  }
+
+  .title {
+    margin-bottom: 11px;
+  }
+
+  .section-contact-form {
+    .contact-form {
+      background: $white-color;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+      border-radius: $border-radius-5;
+      padding: $padding-24;
+
+      .field-row {
+        margin-bottom: $margin-bottom-24;
+      }
+
+      .contact-button {
+        padding: 10px 45px;
+      }
+    }
+  }
+
+  .section-contact-address {
+    padding: $padding-24;
+    background: $white-color;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: $border-radius-5;
+
+    .wrapper-address-block {
+      .descr-link {
+        &:hover {
+          color: $redesign-orange-color;
+        }
+      }
+
+      .description-address {
+        margin-left: 12px;
+      }
+
+      .icon {
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+}
+
+

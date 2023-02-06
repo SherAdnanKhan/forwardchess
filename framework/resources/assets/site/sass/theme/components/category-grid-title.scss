@@ -1,0 +1,13 @@
+.category-grid-title {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: $font-weight-600;
+  text-transform: capitalize;
+  color: $black-color;
+
+  .mobile-filters {
+    margin-left: 15px;
+  }
+}

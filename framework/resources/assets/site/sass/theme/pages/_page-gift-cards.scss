@@ -1,0 +1,50 @@
+.section-gift-cards {
+  padding-bottom: 243px;
+
+  .wrapper-gift-cards-form {
+    background: $white-color;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius-5;
+    padding: $padding-24;
+
+    .wrapper-form-name {
+      padding-bottom: 20px;
+
+      .form-name {
+        max-width: 233px;
+        @media (max-width: 1128px) {
+          max-width: 200px;
+        }
+      }
+
+      .form-email {
+        max-width: 233px;
+        @media (max-width: 1128px) {
+          max-width: 200px;
+        }
+      }
+    }
+
+    .input-group {
+      width: 233px;
+      @media (max-width: 1128px) {
+        width: 200px;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      &:before {
+        content: '$';
+        position: absolute;
+        left: 90%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: $font-size-16;
+        line-height: $line-height-20;
+        color: $black-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/*===================================================================================*/
+/*  Breadcrumb
+/*===================================================================================*/
+
+
+#top-mega-nav {
+  background-color: $white-color;
+
+  .back-link {
+    background: $white-color;
+    border: 1px solid $content-gray-color;
+    box-sizing: border-box;
+    border-radius: $border-radius-3;
+    float: left;
+    padding: 8px 14px;
+    font-size: $font-size-16;
+    line-height: $line-height-20;
+  }
+
+  @media (max-width: 992px) {
+    .breadcrumb-block {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .breadcrumb-link {
+      display: none !important;
+    }
+  }
+}

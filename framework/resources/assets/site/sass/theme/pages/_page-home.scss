@@ -1,0 +1,140 @@
+/*===================================================================================*/
+/*  Home Article
+/*===================================================================================*/
+
+#top-banner-and-menu {
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 115px;
+background-image: url("../../../../../../../images/background-images/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-image: url("../../../../../../../images/background-images/responsive-home.png");
+  }
+
+  .mouse {
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .description-home {
+    margin-bottom: 50px;
+    font-size: $font-size-24;
+    line-height: 30px;
+    color: $white-color;
+    @media (max-width: 768px) {
+      font-size: $font-size-18;
+      line-height: $line-height-23;
+      padding-right: 105px;
+    }
+  }
+
+  .link-download-home {
+    font-size: $font-size-18;
+    line-height: $line-height-23;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: $padding-right-24;
+    background: $redesign-orange-color;
+    border-radius: $border-radius-3;
+    float: left;
+    color: $white-color;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 12px 12px;
+    }
+
+    svg {
+      margin-right: 18px;
+    }
+  }
+}
+
+.section-gift-card-home {
+  .title {
+    font-size: 32px;
+    text-transform: inherit;
+    line-height: 37px;
+  }
+
+  .primary-description {
+    color: #757575;
+  }
+
+  .le-button {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 12px 14px;
+    font-weight: 400;
+    width: 168px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-gift-card-home {
+    .image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .title {
+      font-size: $font-size-30;
+      line-height: 30px;
+    }
+
+    .primary-description {
+      font-size: $font-size-18;
+      line-height: $line-height-23;
+      color: #757575;
+    }
+
+    .le-button {
+      font-size: 22px;
+      line-height: 28px;
+      padding: 16px 22px;
+      font-weight: 400;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section-gift-card-home {
+    .row {
+      flex-direction: column;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .primary-title {
+      font-size: $font-size-30;
+      line-height: 30px;
+    }
+
+    .description {
+      font-size: $font-size-18;
+      line-height: $line-height-23;
+      color: #757575;
+    }
+
+    .le-button {
+      width: 100%;
+
+    }
+  }
+}

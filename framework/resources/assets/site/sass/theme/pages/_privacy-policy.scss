@@ -1,0 +1,47 @@
+#privacy-policy {
+  .disclosure {
+    font-style: italic;
+    font-weight: $font-weight-600;
+    font-size: 15px;
+    margin-bottom: $magrin-bottom-20;
+    color: $red-color;
+  }
+
+  p {
+    font-size: $font-size-14;
+    line-height: $line-height-20;
+  }
+
+  .title {
+    font-weight: bold !important;
+    font-size: 17px;
+    margin: 15px 0;
+  }
+
+  .list {
+    margin: 15px 0;
+    padding-left: 45px;
+    list-style-type: disc;
+
+    &:not(.spaced) li {
+      margin: 5px 0;
+    }
+
+    &.spaced li {
+      margin: 10px 0;
+    }
+
+    &.enum {
+      list-style-type: none;
+
+      li:before {
+        content: "-"; /* Insert content that looks like bullets */
+        padding-right: 8px;
+      }
+    }
+  }
+
+  .img-responsive {
+    margin: 10px auto;
+  }
+}

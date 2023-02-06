@@ -1,0 +1,111 @@
+.section-authentication {
+  padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    .container {
+      padding: 0;
+    }
+  }
+
+
+  .sign-in {
+    .wrapper-password {
+      position: relative;
+      .show-password {
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+    .wrapper-remember{
+      i{
+        &:after {
+          padding-bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .sign-up {
+    .wrapper-password {
+      position: relative;
+      .show-password {
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .authentication {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px 24px;
+    max-width: 456px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      padding: 30px 20px;
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .authentication-redirect {
+      a {
+        color: #F96F34;
+      }
+    }
+
+    .wrapper-icon-block {
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .authentication-redirect {
+        @media (max-width: 768px) {
+          margin-bottom: 25px;
+        }
+      }
+
+      .icon-blocks {
+        @media (max-width: 768px) {
+          margin-top: 25px;
+          order: 1;
+          width: 100%;
+        }
+
+        .icon-block {
+          border-radius: 3px;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+
+          a {
+            cursor: pointer;
+            width: 42px;
+            height: 42px;
+            border-radius: 3px;
+            @media (max-width: 768px) {
+              max-width: 163px;
+            }
+          }
+
+          &:nth-child(1) {
+            background-color: #395693;
+          }
+
+          &:nth-child(2) {
+            background-color: #D64936;
+          }
+        }
+      }
+    }
+
+    .le-checkbox {
+      width: 150px;
+    }
+  }
+}

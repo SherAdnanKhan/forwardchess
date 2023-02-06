@@ -1,0 +1,111 @@
+
+.is-sticky {
+  .low-bar {
+    transition: 0.3s;
+    padding: 15px 0;
+  }
+}
+
+.low-bar {
+  background-color: #1B1D3C;
+  position: relative;
+  padding: 31px 0px;
+  transition: 0.3s;
+
+  .group-top-menu {
+    @media (max-width: 1200px) {
+      display: none !important;
+    }
+  }
+
+  a {
+    font-size: $font-size-16;
+    line-height: $line-height-20;
+    color: $white-color;
+  }
+
+  a:hover {
+    color: $redesign-orange-color;
+  }
+
+  .active {
+    color: $redesign-orange-color;
+  }
+
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .top-search-holder {
+    .search-area {
+      border-radius: $border-radius-3;
+      background-color: $white-color;
+
+      .search-form {
+        position: relative;
+      }
+
+      .search-container {
+        .suggestions {
+          top: 35px;
+          border-radius: 0px 0px 3px 3px;
+          .items {
+            border: none;
+            .item {
+              &:nth-child(1) {
+                border-top: 1px solid #BDBDBD;
+              }
+
+              &:not(:last-child) {
+                border-bottom: 1px solid #BDBDBD;
+              }
+
+              &:last-child {
+                border-bottom: none;
+                border-radius: 0px 0px 3px 3px;
+              }
+
+              padding: 15px;
+              margin-right: 0;
+              .author {
+                font-size: 14px;
+                color: #666666;
+              }
+            }
+          }
+        }
+
+        .v-suggestions {
+          width: 380px;
+          height: 36px;
+
+          input {
+            border-radius: $border-radius-3;
+            padding-left: $padding-left-15;
+            width: 100%;
+            height: 100%;
+            border: transparent;
+          }
+        }
+      }
+
+      .search-button {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: transparent;
+
+        &:after {
+          content: '\f002';
+          @include fa-icon();
+          font-size: $font-size-20;
+          color: $redesign-orange-color;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

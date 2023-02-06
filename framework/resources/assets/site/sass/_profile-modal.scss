@@ -1,0 +1,9 @@
+.profile-modal {
+  .modal-body {
+    @include loader();
+
+    .spinner {
+      background: url('images/ajax.gif') no-repeat center 150px;
+    }
+  }
+}

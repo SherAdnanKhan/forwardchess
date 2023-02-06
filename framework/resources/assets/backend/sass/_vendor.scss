@@ -1,0 +1,32 @@
+@import "~vue-multiselect/dist/vue-multiselect.min";
+@import "~vue-croppa/dist/vue-croppa";
+@import "~vue-snotify/styles/material";
+
+.multiselect__tags {
+  border: 1px solid #ccc;
+  padding-top: 0;
+  min-height: 30px;
+}
+
+.multiselect--active {
+  z-index: 9999;
+}
+
+.multiselect__content-wrapper {
+  z-index: 9999;
+}
+
+.multiselect__tag {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.multiselect__placeholder {
+  margin-bottom: 7px;
+  padding-top: 4px;
+}
+
+.multiselect__single {
+  margin-top: 5px;
+  font-size: 14px;
+}

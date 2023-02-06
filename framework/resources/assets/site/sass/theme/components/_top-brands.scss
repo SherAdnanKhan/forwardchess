@@ -1,0 +1,150 @@
+.section-publishers {
+  background-color: $white-color;
+
+  .block-lines {
+    &:after {
+      bottom: -6px;
+    }
+
+    &:before {
+      bottom: -12px;
+    }
+  }
+
+  .parent {
+    flex-wrap: wrap;
+
+    .child {
+      flex: 1 1 25%;
+      border: 1px solid $content-gray-color;
+      height: 130px;
+      width: 282px;
+
+      &:first-child {
+        border-radius: $border-radius-5 0px 0px 0px;
+      }
+
+      &:nth-child(4) {
+        border-radius: 0px $border-radius-5 0px 0px;
+      }
+
+      &:last-child {
+        border-radius: 0px 0px $border-radius-5 0px;
+      }
+
+      &:nth-last-child(2) {
+        border-radius: 0px 0px 0px 5px;
+      }
+
+      @media (max-width: 992px) {
+        flex: 1 1 33%;
+      }
+
+      @media (max-width: 768px) {
+        flex: 1 1 50%;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-right: none;
+      }
+
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(13) {
+        border-top: none;
+        border-right: none;
+      }
+
+      &:nth-child(8),
+      &:nth-child(12),
+      &:nth-child(14) {
+        border-top: none;
+      }
+
+      &:nth-child(15),
+      &:nth-child(16) {
+        border-top: none;
+        border-left: none;
+      }
+
+      @media (max-width: 992px) {
+        &:nth-child(3),
+        &:nth-child(6),
+        &:nth-child(9) {
+          border-right: 1px solid $content-gray-color;
+        }
+
+        &:nth-child(4) {
+          border-radius: 0px 0px 0px 0px;
+        }
+
+        &:nth-child(3) {
+          border-radius: 0px 5px 0px 0px;
+        }
+
+
+        &:nth-child(4) {
+          border-top: none;
+          border-right: none;
+        }
+
+        &:nth-child(8) {
+          border-right: none;
+        }
+
+        &:nth-child(15) {
+          border-left: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        &:nth-child(3) {
+          border-top: none;
+        }
+
+        &:nth-child(3) {
+          border-radius: 0px 0px 0px 0px;
+        }
+
+        &:nth-child(2) {
+          border-radius: 0px 5px 0px 0px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(8) {
+          border-right: 1px solid $content-gray-color;
+        }
+
+        &:nth-child(4),
+        &:nth-child(10) {
+          border-left: none;
+          border-right: 1px solid $content-gray-color;
+        }
+
+        &:nth-child(15) {
+          border-left: 1px solid $content-gray-color;
+        }
+      }
+
+      img {
+        max-width: 220px;
+        max-height: 128px;
+        object-fit: cover;
+        @media (max-width: 768px) {
+          max-width: 148px;
+        }
+      }
+    }
+  }
+}
+
+.section-gift-card-home {
+  padding: 100px 0px;
+  background-color: $white-color;
+}

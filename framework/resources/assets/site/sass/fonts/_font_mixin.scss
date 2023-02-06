@@ -1,0 +1,49 @@
+@mixin font-family__circularSTD($fontWeight) {
+  font-family: 'CircularStd', sans-serif;
+  @if ($fontWeight == light or $fontWeight == 300) {
+    font-weight: 300;
+  }
+  @else if ($fontWeight == regular or $fontWeight == 400) {
+    font-weight: 400;
+  }
+  @else if ($fontWeight == medium or $fontWeight == 500) {
+    font-weight: 500;
+  }
+  @else if ($fontWeight == semibold or $fontWeight == 600) {
+    font-weight: 600;
+  }
+  @else if ($fontWeight == bold or $fontWeight == 700) {
+    font-weight: 700;
+  }
+  @else if ($fontWeight == extrabold or $fontWeight == 800) {
+    font-weight: 800;
+  }
+  @else if ($fontWeight == black or $fontWeight == 900) {
+    font-weight: 900;
+  }
+  @else if (not $fontWeight) {
+    @error "A $fontWeight parameter is required";
+  }
+  @else {
+    @error "No such font found";
+  }
+}
+
+@mixin font-family__futuraPT($fontWeight) {
+  font-family: 'FuturaPT', sans-serif;
+  @if ($fontWeight == regular or $fontWeight == 400) {
+    font-weight: 400;
+  }
+  @else if ($fontWeight == bold or $fontWeight == 500) {
+    font-weight: 500;
+  }
+  @else if ($fontWeight == bold or $fontWeight == 700) {
+    font-weight: 700;
+  }
+  @else if (not $fontWeight) {
+    @error "A $fontWeight parameter is required";
+  }
+  @else {
+    @error "No such font found";
+  }
+}

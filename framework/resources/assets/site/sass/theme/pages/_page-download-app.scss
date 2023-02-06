@@ -1,0 +1,192 @@
+.section-top-banner-download-app {
+  position: relative;
+  background-image: url("../../../../../../../images/background-images/background-download-app.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-bottom: 80px;
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-image: url("../../../../../../../images/background-images/repsonsive-download.png");
+  }
+
+  .mouse {
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .m-b-60 {
+      margin-bottom: 40px;
+    }
+  }
+
+  .wrapper-download {
+    margin-top: 30px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+      flex-direction: column;
+      .wrapper-download-mobile {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .wrapper-web-app {
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .link-web-reader {
+      font-size: $font-size-18;
+      line-height: $line-height-23;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: $padding-right-24;
+      background: $redesign-orange-color;
+      border-radius: $border-radius-3;
+      color: $white-color;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 12px 12px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      svg {
+        margin-right: 18px;
+      }
+    }
+  }
+}
+
+.section-user-guide {
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 25px;
+  }
+
+  .wrapper-all-block {
+    margin-bottom: 40px;
+
+    .wrapper-block {
+      background: $white-color;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: $border-radius-5;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        .image {
+          justify-content: center;
+        }
+      }
+
+      .image {
+        padding: 5px;
+
+        img {
+          height: 228px;
+          object-fit: cover;
+          @media (max-width: 768px) {
+            height: 241px;
+          }
+        }
+      }
+
+      .content {
+        margin: 24px 24px 24px 0px;
+        @media (max-width: 1200px) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.section-low-banner-download-app {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../../../../../../../images/background-images/download.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .description {
+    font-size: $font-size-18;
+    line-height: $line-height-23;
+    text-align: center;
+    color: $white-color;
+    margin-bottom: 50px;
+    padding: 0px 300px;
+    @media (max-width: 1200px) {
+      padding: 0px;
+    }
+  }
+
+  .wrapper-download {
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .wrapper-download-mobile {
+      margin-right: 13px;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .link-open {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .comments-and-suggestions {
+    display: none;
+  }
+
+  .link-hide {
+    display: none !important;
+  }
+}
+
+.wrapper-download-pc {
+  width: 180px;
+  background: $white-color;
+  border-radius: $border-radius-5;
+  height: 40px;
+  margin-left: 15px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+  a {
+    color: $black-color;
+    &:hover {
+      color: $black-color;
+    }
+    img {
+      margin-right: 8px;
+    }
+  }
+}
